@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOJO MINI BOT | RED EDITION</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            /* Gradient එකට තද රතු සහ කළු මිශ්‍ර කරලා තියෙන්නේ */
+            background: radial-gradient(circle at center, #2b0000 0%, #000000 100%); 
+            color: white;
+            text-align: center;
+            padding: 20px;
+            #ff1f00margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        /* පසුබිමේ තියෙන Glow එක */
+        body::before {
+            content: "";
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: rgba(255, 0, 51, 0.15);
+            filter: blur(100px);
+            border-radius: 50%;
+            z-index: -1;
+        }
+
+        .container {
+            background: rgba(10, 10, 10, 0.8); /* Glassmorphism effect */
+            backdrop-filter: blur(10px);
+            padding: 50px 30px;
+            border-radius: 25px;
+            border: 1px solid rgba(255, 0, 51, 0.3); /* සිහින් රතු border එකක් */
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 0, 51, 0.2);
+            max-width: 420px;
+            width: 90%;
+            animation: slideUp 0.8s ease-out;
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            /* Gojo ගේ නම Glow වෙන්න */
+            text-shadow: 0 0 15px #ff0033, 0 0 30px #ff0033;
+        }
+
+        .dev-info {
+            color: #ff0033;
+            font-weight: bold;
+            font-size: 0.9em;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 1em;
+            color: #bbb;
+            margin-bottom: 35px;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff0033, #800000);
+            color: white;
+            padding: 18px 45px;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 900;
+            font-size: 1.1em;
+            text-transform: uppercase;
+            transition: 0.4s;
+            box-shadow: 0 8px 20px rgba(255, 0, 51, 0.3);
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            transform: scale(1.05) translateY(-5px);
+            box-shadow: 0 12px 30px rgba(255, 0, 51, 0.6);
+            letter-spacing: 1px;
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 0.8em;
+            color: #666;
+            letter-spacing: 3px;
+        }
+
+        /* Phonk Vibe එකට කුඩා animation එකක් */
+        .glow-dot {
+            height: 4px;
+            width: 4px;
+            background-color: #ff0033;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 0 5px;
+            box-shadow: 0 0 10px #ff0033;
+            animation: blink 1s infinite alternate;
+        }
+
+        @keyframes blink {
+            from { opacity: 0.2; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>GOJO MINI BOT</h1>
+        <div class="dev-info">POWERED BY 0722923474</div>
+        <p>
+            Experience the ultimate WhatsApp automation. 
+            Fast, reliable, and built for performance.
+        </p>
+        
+        <a href="https://wa.me/94722923474?text=Hello%20Gojo%20Mini%20Bot" class="btn">
+            DEPLOY NOW
+        </a>
+    </div>
+
+    <div class="footer">
+        <span class="glow-dot"></span> 
+        T.O MINI BOT SYSTEM 
+        <span class="glow-dot"></span>
+
+      
